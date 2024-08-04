@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    /* background-color: white; */
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-----------------Structur------------------*/
+.left-part{
+    float: left;
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(39, 38, 38); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+}
+.center-part{
+    float: left;
+    width: 47%;
+    height: 100%;
+    /* background-color: rgba(236, 2, 2, 0.817); */
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-part{
+    float: left;
+    width: 25%;
+    height: 100%;
+    /* background-color: rgba(31, 30, 29, 0.817); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: scroll;
+}
+.right-part::-webkit-scrollbar{
+    display: none;
+}
+/*----left---------*/
+.left-part .part1{
+    width: 100%;
+    height: 66%;
+    background-color: rgba(31, 30, 29, 0.817);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-part .part1 .logo{
+    font-size: 50px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    margin-left: 50px;
+    /* background-color: aqua; */
+    height: 20%;
+}
+.left-part .part1 .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.left-part .part1 .img img{
+    width: 87%;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.left-part .part1 #para{
+    width: 80%;
+    height: 15%;
+    color: aliceblue;
+    margin-top: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.left-part .part2{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(31, 30, 29, 0.817);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*---------------part2---------------*/
+.left-part .part2 .group{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-part .part2 .group .mini_part{
+    width: 50px;
+    height: 50px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+.left-part .part2 .mini_part img{
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.left-part .part2 .title{
+    background-color: aliceblue;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border-radius: 15px;
+} 
+
+/*------------center------------*/
+.center-part .header{
+    width: 95%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: rgba(31, 30, 29, 0.817);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.center-part .Home{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    border: 2px solid rgb(28, 30, 30);;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-part .Home img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.center-part .Home .title{
+    position:absolute;
+    /* background-color: rgba(0, 0, 0, 0.598); */
+    backdrop-filter: blur(2px);
+    color: rgb(255, 255, 255);
+    /* height: 50%; */
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-radius: 20px;
+}
+.center-part .Home .title .animated_text{
+    border-bottom: 5px solid white;
+    margin-left:10% ;
+    font-size: 40px;
+    width: 60%;
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    /* height: 25%; */
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+    animation: reveal 1s linear forwards;
+    
+}
+.center-part .Home .title .animated_text p{
+    text-transform: uppercase;
+}
+
+.center-part .Home .title #para{
+    font-size: 15px;
+    margin-left: 10%;
+    /* width: 80%; */
+}
+@keyframes reveal {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    30%{
+        width:50% ;
+        height: 0px;
+    }
+    60%{
+        width:50% ;
+        height: 80px;
+    }
+}
+
+.center-part .Home .title .icons{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.397);
+    /* position: fixed; */
+    border-radius: 20px;
+}
+.center-part .Home .title .icons .group{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.center-part .Home .title .icons .group img{
+    width:40px;
+    border-radius: 50%;
+}
+.center-part .Home .title .icons .group img:hover{
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px rgb(255, 255, 255);
+}
+
+.center-part .header img{
+    width: 5%;
+}
+
+#center-part2{
+    display: none;    
+}
+
+/*-----------right part--------------*/
+.right-part .part{
+    width: 90%;
+    background-color: rgba(31, 30, 29, 0.817);
+    border-radius: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+/*---------------header--------------*/
+
+.right-part .part .title_part{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:"Bebas Neue", sans-serif;
+    text-decoration: underline;
+    cursor:pointer;
+    margin: 12px 12px 0 12px;
+}
+.right-part .part p{
+    width: 100%;
+    /* background-color: blueviolet; */
+    font-size: 15px;
+    color: white;
+    
+}
+.right-part .part .btn{
+    width: 50%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/*-----------big part2 using Java Script---------------*/
+/*----------------Media screen-------------------*/
+@media  screen and (max-width: 768px){
+    .all{
+        display: flex;
+        flex-direction: column;
+    }
+    #center-part{
+        display: none; 
+    }
+    #center-part2 .header p{
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+    }
+    #center-part2 .header{
+        width: 100%;
+    }
+    #center-part2 .Home .animated_text{
+        width: 80%;
+        height: max-content;
+    }
+    #center-part2{
+        display: flex;
+        width: 90%;
+        height: max-content;
+    }
+    .left-part{
+        width: 90%;
+        margin: 40px 0px 40px 0px;
+        height: max-content;
+    }
+    .left-part .part2 .title{
+        margin: 0px 0px 15px 0px;
+        font-size: 20px;
+    }
+    .right-part{
+        display: none;
+    }
+
+
+
+}
+
+
